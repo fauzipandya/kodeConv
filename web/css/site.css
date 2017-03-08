@@ -1,0 +1,293 @@
+html,
+body {
+    height: 100%;
+    background-color:#444b54;
+}
+.wrap {
+   
+    width:85%;
+    background-color:white;
+    margin: 0 auto;
+    padding: 0 0 0;
+    border: 2px solid #444b54;
+}
+
+.wrap > .container {
+    padding: 70px 60px 20px;
+    background-color:white;
+    margin:auto 0px;
+    width:100%;
+}
+
+.footer {
+    height: 60px;
+    background-color:#444b54;
+    padding-top: 20px;
+    font-size:16px;
+    font-weight:bold;
+    color:white;
+  }
+
+.jumbotron {
+    text-align: center;
+    background: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+.navbar-inverse{
+    background-image:none;
+    border-radius:0px;
+    border-color: transparent;
+}
+.navbar-inverse .navbar-brand{
+    color: white;
+    font-size:18px;
+    font-weight:bold;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+    
+    font-size:18px;
+    font-weight:bold;
+}
+.navbar > container{
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar{
+    background-color: #444b54;
+    color:white;
+    
+}
+
+.form-group{
+    height: 43px;
+}
+
+.btn-primary{
+    background:  #344146;
+    border: 2px;
+}
+
+.btn-primary:hover{
+    background: #444b54;
+    border: 2px;
+}
+
+.panel-primary > .panel-heading {
+    background: #344146;
+}
+
+.panel-primary{
+    border-color: #344146;
+}
+
+.pagination a:hover:not(.active){
+    background: #444b54;
+    
+    color:white;
+}
+.pagination a:not(.active){
+    color:black;
+}
+
+.pagination > .active> a{
+    color:white;
+    background: #444b54;
+    border-color:#444b54;    
+}
+
+.grid-view{
+    font-size: 16px;
+}
+
+.panel-title{
+    font-size:16px;
+    font-weight: bold;
+}
+
+.pull-right{
+    font-size:18px;
+    font-weight:bold;
+}
+.form-control{
+    color:#444b54;
+    border-radius: 5px
+}
+
+.breadcrumb{
+  overflow: hidden;
+  width: 100%;
+  margin-right:0px;
+  background-color:white;
+}
+
+.breadcrumb li{
+  float: left;
+  margin: 0 .5em 0 0;
+  border-color: transparent;
+}
+
+.breadcrumb a{
+  background: #ddd;
+  padding: .7em 1em;
+  text-decoration: none;
+  color: #444;
+  margin-left: 0px;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+  position: relative;
+}
+
+.breadcrumb a:hover{
+  background: #444b54;
+  color:white;
+}
+
+.breadcrumb a::after{
+  content: "";
+  position: absolute;
+  top: 50%; 
+  margin-top: -1.5em;   
+  border-top: 1.5em solid transparent;
+  border-bottom: 1.5em solid transparent;
+  border-left: 1em solid #ddd;
+  right: -1em;
+}
+
+.breadcrumb a:hover::after{
+  border-left-color: #444b54;
+}
+
+.breadcrumb .active,
+.breadcrumb .active:hover{
+  font-weight: bold;
+  background: none;
+  color:#444b54;
+  margin-left:0.5em;
+}
+
+.breadcrumb .active::after,
+.breadcrumb .active::before{
+  content: normal;
+}
+
+.BPS{
+    background-color: #72ccca; color:white; 
+                                     text-align:center;
+}
+.Kemendagri{
+    background-color: #efc050; color:white; 
+                                     text-align:center;
+}
+
+.Match{
+    background-color: #27ae60; color:white; 
+                                     text-align:center;
+}
+
+.dropdown-menu{
+  background-color: #444b54;
+  font-size: 16px;
+}
+.dropdown-menu :hover, .dropdown-menu :active{
+    background-color:white;
+    color: #444b54;
+}
+.dropdown-menu >li>a{
+    color:white;
+}
+.dropdown-toggle{
+  background-color: #444b54;
+  font-size: 14px;
+  color:white;
+  border-color:transparent;
+}
+.btn-default{
+    background-image: none;
+}
