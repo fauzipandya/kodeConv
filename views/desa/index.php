@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
     
      <?php
     echo $this->render('navi');?>
-    <h2>Rekap Kode Wilayah Kemendagri yang tidak match</h2>
+    <h2>Rekap Kode Wilayah</h2>
  
  <?php Pjax::begin()?> 
      <?php
@@ -71,7 +71,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             'columns' => $gridColumn,
             'dropdownOptions'=>['label'=>'Export All','class'=>"btn btn-default"]
-        ])."<hr>\n".GridView::widget([
+        ])."\n".GridView::widget([
         'dataProvider' => $dataProvider,
         //'showPageSummary'=>true,
         'pjax'=>true,
@@ -134,7 +134,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             'columns' => $gridColumn,
             'dropdownOptions'=>['label'=>'Export All','class'=>"btn btn-default"]
-        ])."<hr>\n".GridView::widget([
+        ])."\n".GridView::widget([
         'dataProvider' => $dataProvider,
         //'showPageSummary'=>true,
         'pjax'=>true,
@@ -201,7 +201,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             'columns' => $gridColumn,
             'dropdownOptions'=>['label'=>'Export All','class'=>"btn btn-default"]
-        ])."<hr>\n".GridView::widget([
+        ])."\n".GridView::widget([
         'dataProvider' => $dataProvider,
         //'showPageSummary'=>true,
         'pjax'=>true,

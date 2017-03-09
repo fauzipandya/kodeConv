@@ -45,6 +45,22 @@ $this->params['breadcrumbs'][] = $this->title;
              'label'=>'Desa'],
             ['attribute'=>'kode',
              'label'=>'Kode']];
+    
+        echo ExportMenu::widget([
+            'target'=>'_self',
+            'dataProvider'=>$dataProvider,
+            'filename'=>'hasil_perbandingan_kab',
+            //'batchSize'=>10,
+            'showColumnSelector'=>false,
+            'showConfirmAlert'=>false,
+            'exportConfig'=>[
+                'HTML'=>false,
+                'PDF'=>false,
+            ],
+            'columns' => $gridColumn,
+            'dropdownOptions'=>['label'=>'Export All','class'=>"btn btn-default"]
+        ]).'\n';
+        
         echo GridView::widget([
         'dataProvider' => $dataProvider,
         //'showPageSummary'=>true,

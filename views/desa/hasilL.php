@@ -207,7 +207,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'floatHeader'=>true,
             //   'floatHeaderOptions'=>['scrollingTop'=>$scrollingTop],
         'hover'=>true,
-         'panel'=>['type'=>'primary','heading'=>'Kecamatan BPS-Kemendagri'],
+         'panel'=>['type'=>'primary','heading'=>'Desa BPS-Kemendagri'],
          'beforeHeader'=>[
              [
                  'columns'=>[
