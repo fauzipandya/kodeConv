@@ -4,6 +4,7 @@ use yii\helpers\Html;
 use kartik\grid\GridView;
 use yii\widgets\Pjax;
 
+use kartik\export\ExportMenu;
 use yii\widgets\Breadcrumbs;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
